@@ -11,7 +11,7 @@
 *Meet Paul at each click*
 
 ## Motivation
-<p style="text-align:center;width:50%;"><img src="./paul-readme.jpg" style="width:100%;height:auto;object-fit:contain;"/></p>
+<p style="text-align:center;"><img src="./paul-readme.jpg" style="width:30%;height:auto;object-fit:contain;"/></p>
 
 This is my friend Paul, as you can see Paul is a cute guy he loves beer and he works hard everyday..
 
