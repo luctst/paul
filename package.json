@@ -1,8 +1,13 @@
 {
-	"name": "paul",
+	"name": "Paul",
 	"version": "1.0.0",
 	"description": "Meet Paul at each click 👨‍🦰 👨‍🦰‍",
 	"main": "lib/index.js",
+	"files": [
+		"lib/umd",
+		"lib/index.js",
+		"lib/src/**/*"
+	],
 	"author": "luctst",
 	"license": "MIT",
 	"repository": {
@@ -20,12 +25,15 @@
 		"lib/build/"
 	],
 	"ava": {
-		"cache": true
+		"cache": true,
+		"require": [
+			"esm"
+		]
 	},
 	"keywords": [],
 	"scripts": {
 		"test": "ava --verbose ./test/*.js",
-		"test:watch": "ava --watch --verbose --fail-fast ./test/*.js",
+		"test:watch": "NODE_ENV=development ava --watch --verbose --fail-fast ./test/*.js",
 		"lint": "npx eslint --cache './lib/**/*.js'",
 		"lint:watch": "esw -w --clear --color --cache './lib/**/*.js'",
 		"lint:fix": "npx eslint --fix './lib/**/*.js'",
@@ -40,6 +48,10 @@
 		"eslint-plugin-import": "2.19.1",
 		"eslint-plugin-prettier": "3.1.2",
 		"eslint-watch": "6.0.1",
+		"esm": "^3.2.25",
 		"prettier": "1.19.1"
+	},
+	"dependencies": {
+		"puppeteer": "^2.0.0"
 	}
 }
