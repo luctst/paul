@@ -18,17 +18,36 @@ This is my friend Paul, as you can see Paul is a cute guy he loves beer and he w
 So I decided to honor him with this little package each time you'll click on a DOM element my friend Paul will appear randomly on your web page :) Enjoy !!
 
 ## Usage
+
+### With Node
 Install this package globally if you want have acces to Paul on all your projects:
+
 ```js
 npm install -g paul
 ```
 
 If you only want Paul on a specific project enter this:
+
 ```js
 npm install paul
 ```
 
+You can now import the `Paul()` function where you want:
+
+```js
+const Paul = require("paul");
+```
+
 > **Note** - To use paul you need node >=10.0.0
+
+### In browser
+If you don't want use node you can use Paul via CDN by including this script just before the `</body>` tag:
+
+```js
+<script crossorigin src="unpkg.com/Paul/umd/paul.client.min.js"></script>
+```
+
+You now have access to the `Paul()` function to see how to use it check the api section below.
 
 ## API
 
