@@ -20,29 +20,17 @@ So I decided to honor him with this little package each time you'll click on a D
 ## Usage
 
 ### With Node
-Install this package globally if you want have acces to Paul on all your projects:
-
-```js
-npm install -g paul
-```
-
-If you only want Paul on a specific project enter this:
-
-```js
-npm install paul
-```
-
-You can now import the `Paul()` function where you want:
-
-```js
-const Paul = require("paul");
-```
-
-> **Note** - To use paul you need node >=10.0.0
+For now Paul is not available with Node we're working on this but you can use it with a CDN.
 
 ### In browser
-If you don't want use node you can use Paul via CDN by including this script just before the `</body>` tag:
+Use Paul via a CDN by including those scripts:
 
+First include the css in your head with:
+```js
+<link rel="stylesheet" src="unpkg.com/Paul/umd/paul.style.css">
+```
+
+And add this script just before your `</body>` tag:
 ```js
 <script crossorigin src="unpkg.com/Paul/umd/paul.client.min.js"></script>
 ```
@@ -50,7 +38,12 @@ If you don't want use node you can use Paul via CDN by including this script jus
 You now have access to the `Paul()` function to see how to use it check the api section below.
 
 ## API
+### Paul([selecteur], [friends])
 
+The `Paul` function create an img with my friend Paul.
+
+* `selecteur` {HTMLElement, optional} - If this argument is specified the `click` event will be attached on this DOM Element.
+* `friends` {Array, optional} - If this argument is specified the function will display randomly an img from the `friends` array.
 
 ## Licence
 MIT
