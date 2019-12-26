@@ -1,6 +1,5 @@
 import test from "ava";
 import puppeteer from "puppeteer";
-import Paul from "../lib/index";
 let browser;
 let page;
 let ElementTest;
@@ -9,8 +8,7 @@ test.before("Launch the chronium instance", async () => {
     browser = await puppeteer.launch();
     page = await browser.newPage();
     ElementTest = await page.$("head");
-
-    // await page.addScriptTag({path: "./lib/src/paul.js"});
+    await page.addScriptTag({path: "./lib/paul.js"});
     
     page.on("console", async msg => {
         if (msg.text() === "JSHandle@object") {
@@ -35,6 +33,4 @@ test("Check if second argument is an array", async t => {
     await ElementTest.dispose();
 });
 
-test.after("Close the chronium instance", async () => {
-    await browser.close();
-});
+test.after("Close the chronium instance", async () => await browser.close());
