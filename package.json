@@ -4,9 +4,7 @@
 	"description": "Meet Paul at each click 👨‍🦰 👨‍🦰‍",
 	"main": "lib/index.js",
 	"files": [
-		"lib/umd",
-		"lib/index.js",
-		"lib/src/**/*"
+		"lib/umd/**/*"
 	],
 	"author": "luctst",
 	"license": "MIT",
@@ -22,16 +20,24 @@
 		"node": ">= 10.0.0"
 	},
 	"eslintIgnore": [
-		"lib/build/"
+		"lib/umd/"
 	],
 	"ava": {
-		"cache": true,
-		"require": [
-			"esm"
-		]
+		"cache": true
 	},
-	"keywords": [],
+	"keywords": [
+		"nodejs",
+		"es6",
+		"babel",
+		"paul",
+		"npm",
+		"package",
+		"DOM",
+		"front-end",
+		"web-browser"
+	],
 	"scripts": {
+		"babel:compile": "./node_modules/.bin/babel ./lib/paul.js -o ./lib/umd/paul.client.min.js",
 		"test": "ava --verbose ./test/*.js",
 		"test:watch": "NODE_ENV=development ava --watch --verbose --fail-fast ./test/*.js",
 		"lint": "npx eslint --cache './lib/**/*.js'",
@@ -41,17 +47,22 @@
 		"style:fix": "prettier --c --write './lib/**/*.js'"
 	},
 	"devDependencies": {
+		"@babel/core": "^7.7.7",
+		"@babel/preset-env": "^7.7.7",
 		"ava": "2.4.0",
+		"babel-preset-minify": "^0.5.1",
 		"eslint": "6.8.0",
 		"eslint-config-airbnb-base": "14.0.0",
 		"eslint-config-prettier": "6.7.0",
 		"eslint-plugin-import": "2.19.1",
 		"eslint-plugin-prettier": "3.1.2",
 		"eslint-watch": "6.0.1",
-		"esm": "^3.2.25",
 		"prettier": "1.19.1"
 	},
 	"dependencies": {
+		"@babel/cli": "^7.7.7",
+		"@babel/polyfill": "^7.7.0",
+		"core-js": "^3.6.1",
 		"puppeteer": "^2.0.0"
 	}
 }
