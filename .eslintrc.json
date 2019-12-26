@@ -11,6 +11,8 @@
 		"prettier"
 	],
 	"rules": {
+		"no-unused-vars": 1,
+		"no-undef": 1,
 		"prettier/prettier": 1,
 		"no-unused-expressions": [
 			"error",
