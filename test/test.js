@@ -1,3 +1,4 @@
+import "@babel/polyfill"
 import test from "ava";
 import puppeteer from "puppeteer";
 let browser;
