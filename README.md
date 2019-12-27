@@ -1,8 +1,8 @@
 # Paul
 
 [![Build Status](https://travis-ci.com/luctst/Paul.svg?branch=master)](https://travis-ci.com/luctst/Paul)
-[![NPM version](https://img.shields.io/npm/v/Paul?style=flat-square)](https://img.shields.io/npm/v/Paul?style=flat-square)
-[![Package size](https://img.shields.io/bundlephobia/min/Paul)](https://img.shields.io/bundlephobia/min/Paul)
+[![NPM version](https://img.shields.io/npm/v/@luctst/paul?style=flat-square)](https://img.shields.io/npm/v/@luctst/paul?style=flat-square)
+[![Package size](https://img.shields.io/bundlephobia/min/@luctst/paul)](https://img.shields.io/bundlephobia/min/@luctst/paul)
 [![Dependencies](https://img.shields.io/david/luctst/Paul.svg?style=popout-square)](https://david-dm.org/luctst/Paul)
 [![devDependencies Status](https://david-dm.org/luctst/Paul/dev-status.svg?style=flat-square)](https://david-dm.org/luctst/Paul?type=dev)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
@@ -27,12 +27,12 @@ Use Paul via a CDN by including those scripts:
 
 First include the css in your head with:
 ```js
-<link rel="stylesheet" src="unpkg.com/Paul/umd/paul.style.css">
+<link rel="stylesheet" src="https://unpkg.com/@luctst/paul/lib/umd/paul.style.css">
 ```
 
 And add this script just before your `</body>` tag:
 ```js
-<script crossorigin src="unpkg.com/Paul/umd/paul.client.min.js"></script>
+<script crossorigin src="https://unpkg.com/@luctst/paul/lib/umd/paul.client.min.js"></script>
 ```
 
 You now have access to the `Paul()` function to see how to use it check the api section below.
