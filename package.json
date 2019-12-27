@@ -2,7 +2,7 @@
 	"name": "@luctst/paul",
 	"version": "1.0.0",
 	"description": "Meet Paul at each click 👨‍🦰 👨‍🦰‍",
-	"main": "lib/index.js",
+	"main": "lib/paul.js",
 	"files": [
 		"lib/umd/**/*"
 	],
