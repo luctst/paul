@@ -23,19 +23,35 @@ So I decided to honor him with this little package each time you'll click on a D
 For now Paul is not available with Node we're working on this but you can use it with a CDN.
 
 ### In browser
-Use Paul via a CDN by including those scripts:
+Use Paul via a CDN by including this script:
 
-First include the css in your head with:
-```js
-<link rel="stylesheet" src="https://unpkg.com/@luctst/paul/lib/umd/paul.style.css">
-```
-
-And add this script just before your `</body>` tag:
+Add this script just before your `</body>` closing tag:
 ```js
 <script crossorigin src="https://unpkg.com/@luctst/paul/lib/umd/paul.client.min.js"></script>
 ```
 
 You now have access to the `Paul()` function to see how to use it check the api section below.
+
+### Exemple
+After adding the script create another `<script>` tag and call the `Paul function`.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your title</title>
+</head>
+<body>
+    <script crossorigin src="https://unpkg.com/@luctst/paul/lib/umd/paul.client.min.js"></script>
+    <script>
+        Paul();
+    </script>
+</body>
+</html>
+```
 
 ## API
 ### Paul([selecteur], [friends])
