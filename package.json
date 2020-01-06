@@ -4,7 +4,7 @@
 	"description": "Meet Paul at each click 👨‍🦰 👨‍🦰‍",
 	"main": "lib/paul.js",
 	"files": [
-		"lib/umd/**/*"
+		"./umd"
 	],
 	"author": "luctst",
 	"license": "MIT",
@@ -20,7 +20,7 @@
 		"node": ">= 10.0.0"
 	},
 	"eslintIgnore": [
-		"lib/umd/"
+		"./umd"
 	],
 	"ava": {
 		"cache": true
@@ -37,7 +37,7 @@
 		"web-browser"
 	],
 	"scripts": {
-		"babel:compile": "./node_modules/.bin/babel ./lib/paul.js -o ./lib/umd/paul.client.min.js",
+		"babel:compile": "./node_modules/.bin/babel ./lib/paul.js -o ./umd/paul.client.min.js",
 		"test": "ava --verbose ./test/*.js",
 		"test:watch": "NODE_ENV=development ava --watch --verbose --fail-fast ./test/*.js",
 		"lint": "npx eslint --cache './lib/**/*.js'",
