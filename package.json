@@ -4,7 +4,7 @@
 	"description": "Meet Paul at each click 👨‍🦰 👨‍🦰‍",
 	"main": "lib/paul.js",
 	"files": [
-		"./umd"
+		"umd/"
 	],
 	"author": "luctst",
 	"license": "MIT",
@@ -20,7 +20,7 @@
 		"node": ">= 10.0.0"
 	},
 	"eslintIgnore": [
-		"./umd"
+		"umd/"
 	],
 	"ava": {
 		"cache": true
