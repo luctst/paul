@@ -27,7 +27,7 @@ Use Paul via a CDN by including this script:
 
 Add this script just before your `</body>` closing tag:
 ```js
-<script crossorigin src="https://unpkg.com/@luctst/paul/lib/umd/paul.client.min.js"></script>
+<script crossorigin src="https://unpkg.com/@luctst/paul/umd/paul.client.min.js"></script>
 ```
 
 You now have access to the `Paul()` function to see how to use it check the api section below.
@@ -45,7 +45,7 @@ After adding the script create another `<script>` tag and call the `Paul functio
     <title>Your title</title>
 </head>
 <body>
-    <script crossorigin src="https://unpkg.com/@luctst/paul/lib/umd/paul.client.min.js"></script>
+    <script crossorigin src="https://unpkg.com/@luctst/paul/umd/paul.client.min.js"></script>
     <script>
         Paul();
     </script>
@@ -60,6 +60,9 @@ The `Paul` function create an img with my friend Paul.
 
 * `selecteur` {HTMLElement, optional} - If this argument is specified the `click` event will be attached on this DOM Element.
 * `friends` {Array, optional} - If this argument is specified the function will display randomly an img from the `friends` array.
+
+## Contribute
+If you'll like to add more images create a PR by adding a new picture in the `static` folder at the root folder.
 
 ## Licence
 MIT
