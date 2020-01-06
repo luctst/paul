@@ -108,4 +108,4 @@ dist
 .vscode
 
 # CDN UMD
-lib/umd
+umd
