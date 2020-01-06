@@ -1,6 +1,6 @@
 {
 	"name": "@luctst/paul",
-	"version": "1.4.0",
+	"version": "1.5.0",
 	"description": "Meet Paul at each click 👨‍🦰 👨‍🦰‍",
 	"main": "lib/paul.js",
 	"files": [
